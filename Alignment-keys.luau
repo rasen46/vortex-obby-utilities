@@ -34,10 +34,10 @@ local HorizontalRotation = 45
 local VerticalRotation = 30
 local MaxVertical = 80
 
-local leftAlignment = Enum.KeyCode.Comma
-local rightAlignment = Enum.KeyCode.Period
-local upAlignment = Enum.KeyCode.Equals
-local downAlignment = Enum.KeyCode.Minus
+local leftAlignment = Enum.KeyCode.G
+local rightAlignment = Enum.KeyCode.H
+local upAlignment = Enum.KeyCode.U
+local downAlignment = Enum.KeyCode.J
 
 local rightclick = false
 
