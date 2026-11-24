@@ -40,7 +40,7 @@ local keys = {
 	down = false,
 }
 
-local targetPosition
+local targetCF
 local speed = Configuration.NC.NoclipSpeedDefault
 local noclip = false
 
@@ -61,7 +61,7 @@ UIS.InputBegan:Connect(function(inp, pro)
 	if keyEvent == "Noclip" then
 		noclip = not noclip
 		if noclip then
-			targetPosition = player.Character:GetPivot()
+			targetCF = player.Character:GetPivot()
 		end
 	elseif keyEvent == "NoclipUp" then
 		keys.up = true
@@ -138,12 +138,9 @@ RunService.Heartbeat:Connect(function(dt)
 	if direction.Magnitude > 0 then
 		direction = direction.Unit
 	end
+	local newCF = targetCF + direction * speed * dt
 
-	local pivot = targetPosition
-	local newPosition = pivot.Position + direction * speed * dt
-	local final = CFrame.lookAt(newPosition, newPosition + forward)
-
-	targetPosition = final
-	HRP.Position = final.Position
+	targetCF = newCF
+	HRP.Position = newCF.Position
 	HRP.AssemblyLinearVelocity = dVect
 end)
