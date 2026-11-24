@@ -3,7 +3,7 @@
 	by rasen46
 
 	last update: 11/24/2026
-	v1.0.5
+	v1.0.5 (batch release 1.0.0)
 ]]
 
 local UIS = game:GetService("UserInputService")
