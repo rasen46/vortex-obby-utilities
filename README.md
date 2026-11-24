@@ -6,7 +6,6 @@ a bunch of obbying utilities for a game named "Vortex"
 | --- | --- | --- |
 | Alljumper | Gives you abilities checkpoint a position | 0.10.1 |
 | Noclip | Gives you abilities to fly around | 0.10.1 |
-| Heal | Gives you abilities to heal quicker | 0.10.1 |
 | Toolkit | Everything in here inside one single script | 0.10.1 |
 
 ## Installation (.luau files)
